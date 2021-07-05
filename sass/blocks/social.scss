@@ -17,4 +17,13 @@
 
 .social__icon {
   fill: $icons;
+  transition-property: fill;
+  transition-duration: 500ms;
+}
+
+.social__link {
+  &:hover .social__icon,
+  &:active .social__icon {
+    fill: $hover;
+  }
 }
