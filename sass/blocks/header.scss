@@ -1,0 +1,86 @@
+.header {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+}
+
+.header__left {
+  grid-column: span 11;
+  padding: 5% 0 9% 16%;
+  background: url("/img/image1.png") center no-repeat;
+  background-size: 100%;
+}
+
+.header__right {
+  grid-column: span 5;
+}
+
+.header__logo {
+  display: block;
+  max-width: 100%;
+}
+
+.header__title {
+  font-size: 18px;
+  font-family: "Roboto Condensed";
+  color: $text-color;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 5px 0 0 0;
+}
+
+.header__social {
+  margin: 60px 0 15px 15px;
+}
+
+.header__right {
+  background-color: $icons;
+  position: relative;
+  padding: 11% 0 0 0;
+}
+
+.header__line {
+  stroke: $background;
+  stroke-width: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.header__address {
+  font-style: normal;
+  font-size: 13px;
+  font-family: "Roboto Condensed";
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.1;
+  position: absolute;
+  left: 13%;
+  bottom: 37%;
+}
+
+.header__contacts {
+  font-size: 13px;
+  font-family: "Roboto Condensed";
+  color: $white;
+  text-transform: uppercase;
+  line-height: 1.1;
+  position: absolute;
+  left: 35%;
+  bottom: 19%;
+}
+
+.header__tel,
+.header__mail {
+  color: $white;
+  display: inline-block;
+  transition-property: color;
+  transition-duration: 500ms;
+
+  &:hover {
+    color: $hover
+  }
+}
+
+
